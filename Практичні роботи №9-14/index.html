@@ -1,0 +1,267 @@
+<html lang="en">
+<head>
+<style>
+#media{border:none; max-width: 1200px; margin: 30px auto; padding: 20px; box-sizing: border-box;}
+#media h2 {text-align: center; margin-bottom: 20px;}
+#media iframe {width: 100%; max-width: 1000px; height: auto; aspect-ratio: 16/9; display: block; margin: 20px auto;}
+#media ul {list-style-type: none; padding: 0; margin-top: 20px; text-align: center;}
+#media ul li {margin-bottom: 10px;}
+#media ul li a {text-decoration: none; color: #1a73e8;transition: color .3s;}
+#media ul li a:hover { color: #0b4da0;}
+@media (max-width: 768px) {#media iframe {max-width: 100%; height: auto;}
+#media ul li big {font-size: 1rem;}} border
+
+
+#schedule {max-width: 600px; margin: 20px auto; font-family: sans-serif;}
+#schedule table {width: 100%; border: 1px solid #999; border-collapse: collapse;}
+#schedule th, #schedule td {border: 1px solid #999; padding: 8px; text-align: center;}
+#schedule th { background: #e8e8e8; font-weight: bold;}
+#schedule tbody tr:nth-child(odd) {background: #f9f9f9;}
+#schedule tbody tr:nth-child(even) {background: #ededed;}
+#schedule tfoot td {background: #e8e8e8; font-style: italic; text-align: center;}
+
+
+body {margin: 0; padding: 0; background: yellow; font-family: Arial, sans-serif; box-sizing: border-box;}
+header, nav, main, aside, footer {border: 2px solid black;padding: 15px;margin: 10px; background: #fff7c2;}
+nav ul {display: flex; gap: 15px; list-style: none; padding: 0; margin: 0;}
+nav a {text-decoration: none; font-weight: bold; color: blue;}
+main {display: flex; gap: 20px;}
+.content {width: 70%;}
+aside {width: 30%; background: #e2e2e2;}
+
+
+.demo-block {border: 3px solid green; padding: 10px;margin: 10px 0;}
+.demo-inline {border: 2px solid rgb(5, 95, 131); padding: 3px; background: #ffffff;}
+.demo-inline-block {border: 2px solid blue; padding: 5px; margin: 5px; display: inline-block; background: #d6e6ff;}
+
+
+#form-section {max-width: 450px; margin: 30px auto; padding: 20px; background: #f2f2f2; border-radius: 8px; font-family: sans-serif;}
+#form-section aria-label {display: block; margin-bottom: 10px;}
+#form-section input, #form-section select, #form-section textarea 
+{width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;}
+#form-section button { padding: 8px 14px; margin-right: 5px; border: none; border-radius: 4px; cursor: pointer;}
+#form-section button:hover {background: #ddd;}
+
+
+ol.solid-gap li {margin-bottom: 20px;}
+#travel-tips {background: #f5e858; border: 2px solid #000; padding: 20px 25px; margin: 20px 0; border-radius: 8px;}
+#travel-tips h3 {font-size: 26px; margin-bottom: 15px; color: #003366;}
+#travel-tips ol {font-size: 19px; line-height: 1.6; margin-left: 20px;}
+#travel-tips ol li {margin-bottom: 12px}
+
+</style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Time</title>
+</head>
+<body bgcolor="yellow">
+    <header>
+       <h1><font color="blue"><id="top">Travel Time</font></h1>
+
+    </header>
+<nav>
+    <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#elements">HTML-елементи</a></li>
+        <li><a href="#schedule">Розклад</a></li>
+    </ul>
+</nav>
+
+    <main>
+    <div style="width:70%">
+        <font color="navy">
+        <h2>Чим можуть стати подорожі</h2>
+        <p>Подорожі — це чудовий спосіб відкрити для себе <strong>нові культури</strong>, познайомитися з людьми та зануритися у <em>атмосферу різних країн</em>.</p>
+
+        <h3><strong>3 місця, які варто відвідати</strong></h3>
+        <ol>
+            <li>Париж — місто романтики та мистецтва.</li>
+            <img src="paris.jpg" alt="Ейфелева вежа в Парижі" width="400" height="200" title="Зображення з інтернету" hspace="10" vspace="10">
+            <li>Токіо — поєднання традицій і футуристичних технологій.</li>
+            <img src="tokio.jpg" alt="Пейзаж на Токіо" width="400" height="200" title="Зображення з інтернету" hspace="10" vspace="10">
+            <li>Барселона — яскраве життя та неймовірна архітектура.</li>
+            <img src="barselona.jpg" alt="Кафедральний собор Барселони" width="400" height="200" title="Зображення з інтернету" hspace="10" vspace="10">
+        </ol>
+
+        <h3>Що взяти з собою в подорож</h3>
+        <ul>
+            <li>Паспорт та документи</li>
+            <li>Зарядні пристрої та павербанк</li>
+            <li>Легкий рюкзак зі всім необхідним <a href="https://totobi.com.ua/"> <img src="https://totobi.com.ua/images/thumbnails/790/790/detailed/5/a9dfcd41-c857-11e6-80c2-000c295c9c78_4ac36c4f-92e4-11ef-842a-000c29fc72a4..jpg" id="backpack" width="250" height="250" 
+                alt="Легкий рюкзак для подорожі" title="Реклама" align="right" hspace="1" vspace="1" > </a></li>
+        </ul>
+        </font>
+
+        <p>Більше порад для мандрівників: <a href="https://www.lonelyplanet.com" target="_blank">LonelyPlanet</a></p>
+
+
+
+        <!-- Таблиця -->
+        <section id="schedule">
+            <h2>Розклад подорожей</h2>
+            <table>
+                <caption>Графік подорожей</caption>
+                <thead>
+                    <tr><th>Дата</th><th>Країна</th><th>Місто</th><th>Тип</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">12.03</td>
+                        <td>Франція</td>
+                        <td>Париж</td>
+                        <td>Екскурсія</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Додаткова програма</td>
+                        <td>Культурна</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr><td colspan="4">Дані можуть щотижня змінюватись</td></tr>
+                </tfoot>
+            </table>
+            <small>Джерело: TravelTime</small>
+        </section>
+
+        <!-- Форма -->
+        <section id="form-section">
+            <h2>Форма зворотного зв’язку</h2>
+            <form action="#" method="post">
+                <aria-label>ПІБ:<br><input type="text" name="name" required></aria-label><br><br>
+                <aria-label>Email:<br><input type="email" name="email" required></aria-label><br><br>
+
+                <p>Тип подорожі:</p>
+                <aria-label><input type="radio" name="type" value="solo"> Соло</aria-label>
+                <aria-label><input type="radio" name="type" value="group"> Групова</aria-label><br><br>
+
+                <p>Опції:</p>
+                <aria-label><input type="checkbox" name="guide"> Гід</aria-label>
+                <aria-label><input type="checkbox" name="food"> Харчування</aria-label><br><br>
+
+                <aria-label>Країна:<br>
+                    <select name="country">
+                        <option>Франція</option>
+                        <option>Японія</option>
+                        <option>Іспанія</option>
+                    </select>
+                </aria-label><br><br>
+
+                <aria-label>Повідомлення:<br>
+                    <textarea name="msg"></textarea>
+                </aria-label><br><br>
+
+                <button type="submit">Відправити</button>
+                <button type="reset">Скинути</button>
+            </form>
+        </section>
+
+        <!-- Медіа -->
+        <section id="media">
+            <h2>Дивовижні місця де варто побувати</h2>
+            <iframe width="1000" height="562" src="https://www.youtube.com/embed/kHG9ixUakCs" title="Дивовижні місця нашої планети, де ви повинні побувати!" frameborder="0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> Ваш браузер не підтримує відображення відео. Можна переглянути його 
+    <a href="https://www.youtube.com/watch?v=kHG9ixUakCs" target="_blank">тут</a></iframe>
+            <iframe width="1000" height="625" src="image.png" name="frame2" frameborder="0" >Ваш браузер не підтримує відображення. Можна переглянути за посиланнями
+    <a href="https://turpoisk.ua/ua/statii/top-naikrasyvishykh-mists" target="_blank"></a> тут та тут <a href="https://andreolli.com.ua/dovidnyk-mandrivnyka/25-najbilsh-vidviduvanyh-mists-svitu.html" target="_blank"></a></iframe>
+            <ul>
+                <li><a href="https://turpoisk.ua/ua/statii/top-naikrasyvishykh-mists" target="frame2"><big>40 приголомшливих місць планети, які треба побачити хоча б раз у житті</big></a></li>
+                <li><a href="https://andreolli.com.ua/dovidnyk-mandrivnyka/25-najbilsh-vidviduvanyh-mists-svitu.html" target="frame2"><big>25 найбільш відвідуваних місць Світу</big></a></li>
+                <a href="#top">ПЕРЕЙТИ НА ПОЧАТОК</a>
+            </ul>
+        </section>
+    </div>
+
+    <aside id="travel-tips">
+        <h3>Поради від досвідчених мандрівників</h3>
+        <blockquote>
+
+    <ol class="solid-gap" style="font-size: 24px;">
+        <li>Завжди перевіряйте документи перед поїздкою: паспорт, квитки, бронювання.</li>
+        <li>Робіть копії важливих документів і тримайте їх окремо.</li>
+        <li>Пакуйтеся легше — зайва вага лише заважає.</li>
+        <li>Візьміть невелику дорожню аптечку.</li>
+        <li>Завантажте офлайн-карти на телефон.</li>
+        <li>Вивчіть кілька фраз місцевою мовою.</li>
+        <li>Перевіряйте правила перевезення багажу авіакомпанії.</li>
+        <li>Залишайте час для спонтанних досліджень.</li>
+        <li>Відвідуйте нетуристичні місця — вони найцікавіші.</li>
+        <li>Майте з собою пляшку води.</li>
+        <li>Зберігайте гроші в різних місцях.</li>
+        <li>Оформлюйте медичну страховку.</li>
+        <li>Вивчайте місцеві звичаї та правила.</li>
+        <li>Перевіряйте погоду перед поїздкою.</li>
+        <li>Користуйтеся громадським транспортом.</li>
+        <li>Фіксуйте свої витрати.</li>
+        <li>Робіть перерви під час активних екскурсій.</li>
+        <li>Завжди майте павербанк.</li>
+        <li>Спілкуйтеся з місцевими — вони знають найкращі місця.</li>
+        <li>Фотографуйте важливі моменти, а не лише пам'ятки.</li>
+        <li>Купуйте квитки онлайн, щоб уникнути черг.</li>
+        <li>Використовуйте рюкзак замість валізи, якщо плануєте багато ходити.</li>
+        <li>Не носіть усі цінності в одному місці.</li>
+        <li>Зберігайте адреси готелів у телефоні та на папірці.</li>
+        <li>Майте невелику сумку або поясну сумку для документів.</li>
+        <li>Купуйте місцеву SIM-карту для дешевшого інтернету.</li>
+        <li>Робіть паузи для відпочинку після довгих переїздів.</li>
+        <li>Пробуйте місцеву кухню — це частина подорожі.</li>
+        <li>Уникайте туристичних ресторанів у центрі міста.</li>
+        <li>Плануйте бюджет, але залишайте гроші на несподіванки.</li>
+        <li>Перевіряйте читацькі відгуки про місця, які плануєте відвідати.</li>
+        <li>Беріть легкі перекуси у дорогу.</li>
+        <li>Слухайте місцеві рекомендації щодо безпеки.</li>
+        <li>Скануйте документи та зберігайте в хмарі.</li>
+        <li>Не залишайте цінні речі у машині чи на пляжі.</li>
+        <li>Тримайте телефон зарядженим — він ваш навігатор.</li>
+        <li>Пам’ятайте про адаптери, якщо країна має інші розетки.</li>
+        <li>Одягайтеся зручно — комфорт важливіший за стиль.</li>
+        <li>Уникайте великих сумок у натовпах.</li>
+        <li>Записуйте важливі враження — це допоможе потім згадати деталі.</li>
+        <li>Приїжджайте на вокзал чи аеропорт заздалегідь.</li>
+        <li>Майте невелику готівку — не всюди приймають картки.</li>
+        <li>Беріть лише необхідну техніку — не перевантажуйте рюкзак.</li>
+        <li>Не ігноруйте знаки та попередження.</li>
+        <li>Досліджуйте вулиці зранку, коли менше людей.</li>
+        <li>Відвідуйте музеї в дні безкоштовного входу.</li>
+        <li>Носіть зручне взуття — це найважливіше у подорожах.</li>
+        <li>Завжди перевіряйте час роботи місць, які хочете відвідати.</li>
+        <li>Поважайте природу та залишайте після себе чистоту.</li>
+        <li>Насолоджуйтесь моментом — не все потрібно знімати на камеру.</li>
+    </ol>
+</ol>
+
+</blockquote>
+    </aside>
+</main>
+    <section id="elements"> 
+    <h2>Наші подорожі</h2>
+
+    
+    <div class="demo-block" style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+        Подорожі — це спосіб відкрити нові горизонти та відчути справжню красу світу. Ми відвідуємо різні країни, знайомимося з культурою та традиціями місцевих жителів, насолоджуємося природою та створюємо незабутні спогади.
+    </div>
+
+    <p>
+        <span class="demo-inline" style="margin-right: 10px; color: #2a9d8f;">Море</span>
+        <span class="demo-inline" style="margin-right: 10px; color: #e76f51;">Гори</span>
+        <span class="demo-inline" style="margin-right: 10px; color: #f4a261;">Міста</span>
+        <span class="demo-inline" style="color: #264653;">Природа</span>
+    </p>
+
+    <p>
+        <span class="demo-inline-block" style="display:inline-block; padding:10px 15px; margin:5px; background-color:#e9c46a; border-radius:5px;">
+            Автобусні тури
+        </span>
+        <span class="demo-inline-block" style="display:inline-block; padding:10px 15px; margin:5px; background-color:#f4a261; border-radius:5px;">
+            Круїзи
+        </span>
+        <span class="demo-inline-block" style="display:inline-block; padding:10px 15px; margin:5px; background-color:#2a9d8f; color:white; border-radius:5px;">
+            Пішохідні маршрути
+        </span>
+    </p>
+    </section>
+    <footer>
+        <p>Автор: Петриняк Константин • Контакти:  <a href="mailto:travel@time.com">Зв’язатись з автором документа</a></p>
+    </footer>
+</body>
+</html>
